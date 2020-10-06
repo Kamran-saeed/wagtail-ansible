@@ -1,0 +1,7 @@
+---
+# defaults file for maria-db
+
+mysql_root_password: admin
+mysql_db: wagtaildb
+repo_key: apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8 #apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
+repo: deb [arch=amd64,arm64,ppc64el] https://mirrors.n-ix.net/mariadb/repo/10.3/ubuntu bionic main

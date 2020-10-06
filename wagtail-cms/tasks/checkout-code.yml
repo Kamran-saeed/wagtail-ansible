@@ -1,0 +1,8 @@
+---
+
+- name: checkout code
+  git:
+    repo={{ git_repo }}
+    dest={{ project_dir }}
+    version={{ git_branch }}
+    force=yes

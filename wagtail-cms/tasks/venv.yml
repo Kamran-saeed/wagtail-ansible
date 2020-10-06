@@ -1,0 +1,4 @@
+---
+
+- name: Create virtualenv and install dependencies
+  pip: requirements={{ project_dir}}/requirements.txt virtualenv={{ root_dir }}/venv virtualenv_python=python3

@@ -1,0 +1,12 @@
+---
+
+- name: Install Utility software
+  apt: name={{item}} state=latest
+  with_items:
+    - software-properties-common
+    - python3-mysqldb
+- name: Make sure pymysql is present
+  become: true
+  pip:
+    name: PyMySQL
+    state: present

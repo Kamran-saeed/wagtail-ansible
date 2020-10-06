@@ -1,0 +1,23 @@
+---
+# tasks file for wagtail-cms
+
+- name: checkout code
+  import_tasks: checkout-code.yml
+
+- name: Install dependencies
+  import_tasks: dependencies.yml
+  become: true
+
+- name: Create virtualenv and install dependencies in it
+  import_tasks: venv.yml
+
+- name: Update Database setting to MariaDB
+  import_tasks: database.yml
+  become: true
+
+- name: Collect static pages and Create Super User for Wagtail CMS
+  import_tasks: config.yml
+
+- name: Setup supervisor app
+  import_tasks: supervisor.yml
+  become: true

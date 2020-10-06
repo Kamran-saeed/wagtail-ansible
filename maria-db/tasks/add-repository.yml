@@ -1,0 +1,10 @@
+---
+
+- name: Add apt key
+  command: "{{repo_key}}"
+
+- name: Add MariaDB Repo
+  apt_repository: 
+    filename: MariaDB-10.3 
+    repo: "{{repo}}"
+    state: present

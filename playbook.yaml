@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  vars_files:
+    - variables.yml
+  roles:
+    - { role: maria-db, become: true } 
+    - { role: wagtail-cms, become: true }
+    - { role: nginx, become: true }

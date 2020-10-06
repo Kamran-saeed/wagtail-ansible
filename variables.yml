@@ -1,0 +1,32 @@
+
+---
+# common vars
+
+project_dir: /home/ubuntu/wagtail_cms
+project_name: wagtail_cms
+root_dir: /home/ubuntu
+
+mysql_root_password: admin
+mysql_db: wagtaildb
+
+
+# maria-db role vars
+
+repo_key: apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+repo: deb [arch=amd64,arm64,ppc64el] http://mirror.lstn.net/mariadb/repo/10.3/ubuntu bionic main
+
+
+# wagtail-cms role vars
+
+git_repo: https://github.com/Kamran-saeed/wagtail
+git_branch: main
+
+superuser_username: kamran
+superuser_email: kamran@mail.com
+superuser_password: Test@12345
+
+
+# nginx role vars
+
+server_port: 80
+server_name: localhost

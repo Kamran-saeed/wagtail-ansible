@@ -1,0 +1,7 @@
+---
+# defaults file for nginx
+
+server_port: 80
+server_name: localhost
+project_name: wagtail_cms
+project_dir: /home/ubuntu/wagtail_cms

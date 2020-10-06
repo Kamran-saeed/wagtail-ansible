@@ -1,0 +1,9 @@
+---
+
+- name: Collect static pages
+  django_manage: app_path={{ project_dir }} command=collectstatic virtualenv={{ root_dir }}/venv
+
+- name: Create Wagtail Super User 
+  shell: echo "from django.contrib.auth.models import User; print('Superuser Already Exists') if (len(User.objects.filter(username='{{superuser_username}}' , is_superuser=True))) == 1 else User.objects.create_superuser('{{superuser_username}}', '{{ superuser_email }}', '{{superuser_password}}')" | {{ root_dir }}/venv/bin/python3 {{project_dir}}/manage.py shell
+
+  

@@ -1,0 +1,13 @@
+---
+# defaults file for wagtail-cms
+
+git_repo: https://github.com/Kamran-saeed/wagtail
+git_branch: main
+project_dir: /home/ubuntu/wagtail_cms
+project_name: wagtail_cms
+root_dir: /home/ubuntu
+mysql_db: wagtaildb
+mysql_root_password: admin
+superuser_username: test
+superuser_email: test@mail.com
+superuser_password: Test@12345

@@ -1,0 +1,6 @@
+[program:{{project_name}}]
+command = {{root_dir}}/venv/bin/gunicorn --access-logfile - --workers 3 {{project_name}}.wsgi:application
+directory = {{project_dir}}
+user = ubuntu
+stderr_logfile=/var/log/supervisor/test.err.log
+stdout_logfile=/var/log/supervisor/test.out.log

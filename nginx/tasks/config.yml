@@ -1,0 +1,8 @@
+---
+
+- name: Copy nginx config file
+  template: 
+    src: wagtail.conf.j2
+    dest: /etc/nginx/sites-available/default
+  notify: restart nginx
+

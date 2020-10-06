@@ -1,0 +1,7 @@
+---
+
+- name: Copy Settings file with MariaDB creds
+  template: src=base.py.j2 dest={{project_dir}}/{{project_name}}/settings/base.py
+
+- name: Migrate database to MariaDB
+  django_manage: app_path={{ project_dir }} command=migrate virtualenv={{ root_dir }}/venv

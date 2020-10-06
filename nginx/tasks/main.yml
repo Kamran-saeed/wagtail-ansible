@@ -1,0 +1,10 @@
+---
+# tasks file for nginx
+
+- name: Install Nginx
+  import_tasks: install.yml
+  become: true
+
+- name: config Nginx
+  import_tasks: config.yml
+  become: true
