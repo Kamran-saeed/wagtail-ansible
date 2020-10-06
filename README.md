@@ -11,7 +11,7 @@ This repository contails three ansible roles for setting up Wagtail-CMS with Mar
     - Checkout the sample wagtail project code from git
     - Install dependencies require to run wagtail cms
     - Creates virtualenv and install dependencies for the sample project
-    - configure MariaDB with Wagtail CMS
+    - Configure MariaDB with Wagtail CMS
     - Create superuser
     - Setup Supervisor to manage the execution of application
   - nginx
