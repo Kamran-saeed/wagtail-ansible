@@ -1,5 +1,5 @@
 
-# Wagtail CMS with Ansible
+# Wagtail CMS Deployment with Ansible
 
 This repository contails three ansible roles for setting up Wagtail-CMS with Maria Database, Nginx to configure the Wagtail-CMS to run on localhost with default port 80 and Supervisor to manage execution of application.
 - Roles
